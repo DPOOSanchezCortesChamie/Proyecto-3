@@ -1,0 +1,26 @@
+Guia de pruebas futbol de fantasia
+
+1. Crear un usuario de tipo administrador y iniciar sesion con este
+
+2. Oprimir crear temporada e ingresar los valores de la temporada. El nombre representa un marcador unico que se podra usar luego con el usuario para crear el equipo de fantasia. Los archivos de fechas y nominas son fechas.csv y equipos.csv. Para el presupuesto podemos ingresar cualquier valor numerico, aunque por referencia cada jugador cuesta 1 unidad, entonces para el funcionamiento recomendamos 50. Cuando todos los valores esten ingresado dele a crear temporada, le deberia salir un aviso confirmando.
+
+
+Con la temporada creada podemos ver el numero de equipos, el nombre de la temporada y la fecha actual. Estos valores cambiaran mientras creamos equipos para la temporada. Estamos en la fecha 0, ya que no ha empezado aun la temporada de fantasia, cuando queramos empezarla es dar en el boton terminar fecha, pero primero crearemos los equipos.
+
+3. Cerrar sesion y crear un nuevo usuario. Al iniciar sesion se podrá ver la interfaz del usuario. Para poder usar esta nos toca primero crear un equipo de fantasía. Para esto dar en el botón crear equipo. En nombre de temporada escribimos el nombre que le dimos a la temporada con el administrador, esto es para poder asociar el equipo a esta. Elegimos un nombre de equipo al gusto e ingresamos los jugadores. Los jugadores se ingresan en modo de una linea de texto, por lo que damos acá dos posibles listas, compuestas por las selecciones de Ecuador y de Holanda. ññ
+
+Alexander Domínguez, Hernán Galíndez, Pervis Estupiñán, Ángelo Preciado, Piero Hincapié, Xavier Arreaga, Byron Castillo, Ángel Mena, Carlos Gruezo, Jhegson Méndez, Gonzalo Plata, Moisés Caicedo, Enner Valencia, Michael Estrada, Djorkaeff Reasco
+
+Remko Pasveer, Jasper Cillessen, Jurriën Timber, Matthijs de Ligt, Virgil van Dijk, Nathan Aké, Stefan de Vrij, Steven Berghuis, Davy Klaassen, Marten de Roon, Kenneth Taylor, Frenkie de Jong, Steven Bergwijn, Cody Gakpo, Wout Weghorst
+
+4. Con el equipo creado podemos seleccionarlo en el menu de arriba para poder ver sus jugadores y comprar y vender jugadores. Para probar el requerimiento de multiples equipos recomendamos crear un equipo con cada una de las listas de jugadores que dimos. Ambos equipos funcionan independiente del otro, y podrian estar asociados a temporadas distintas. 
+
+5. Para comprar y vender jugadores se ingresa en donde dice 'Vender' un nombre de un jugador actual, y en 'Comprar' otro jugador de la misma posicion. Recomendamos probarlo con:
+Vender: Alexander Domínguez ; Comprar: Remko Pasveer
+Vender: Djorkaeff Reasco ; Comprar: Cody Gakpo
+
+6. Cerrar sesión y volver a iniciar sesión con el administrador, podrá ver el cambio en el número de equipos. Haga click en 'Terminar fecha' para empezar la temporada. El proyecto modela usando los partidos del grupo A del Mundial Qatar 2022. Haga click en siguiente partido y le dirá el primer partido de este grupo. Los archivos para los partidos son partido1.csv, partido2.csv, partido3.csv. Ingrese indivualmente los archivos y espiche enviar. Puede ir viendo cual es el siguiente partido. La primera fecha solo tiene dos encuentros entonces, para el tercero le tocará volver a darle a 'Terminar Fecha'.
+
+7. Con los 3 archivos cargados podemos empezar a revisar los nuevos requerimientos. En la interfaz del admin podemos encontrar los reportes de progreso comparativo por equipo de fantasía y el reporte por progreso de puntos de equipos por fecha. En la interfaz de usuario podemos ver el reporte comparativo de puntos de los jugadores y el reporte comparativo de compra y venta.
+
+Muchas gracias por usar nuestra aplicación.
